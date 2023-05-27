@@ -36,7 +36,8 @@ public class Maze {
 			"12. Spiral Backtracker", "13. Wilson's", "14. Zig-Zag"};
 	private static final String[] SOLVING_METHODS = {"0. Bi-directional DFS", "1. BFS", "2. DFS", "3. Dijkstra's"};
 
-	private int cols, rows;
+	private final int cols;
+	private final int rows;
 
 	public static void main(String[] args) {
 		new Maze();
@@ -46,17 +47,14 @@ public class Maze {
 		cols = Math.floorDiv(WIDTH, W);
 		rows = cols;
 
-		EventQueue.invokeLater(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-				} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
-						| UnsupportedLookAndFeelException ex) {
-					ex.printStackTrace();
-				}
-				createAndShowGUI();
+		EventQueue.invokeLater(() -> {
+			try {
+				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+					| UnsupportedLookAndFeelException ex) {
+				ex.printStackTrace();
 			}
+			createAndShowGUI();
 		});
 	}
 

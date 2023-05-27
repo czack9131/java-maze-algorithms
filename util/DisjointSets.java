@@ -68,7 +68,6 @@ public class DisjointSets {
 	}
 
 	public int find_set(int element) {
-
 		for (int index = 0; index < disjointSet.size(); index++) {
 			Map<Integer, Set<Integer>> map = disjointSet.get(index);
 			Set<Integer> keySet = map.keySet();

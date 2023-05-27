@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CommentedOutCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="DataFlowIssue" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="SUGGEST_NULLABLE_ANNOTATIONS" value="false" />
+      <option name="DONT_REPORT_TRUE_ASSERT_STATEMENTS" value="false" />
+      <option name="REPORT_NULLS_PASSED_TO_NOT_NULL_PARAMETER" value="false" />
+      <option name="REPORT_NULLABLE_METHODS_RETURNING_NOT_NULL" value="false" />
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="StringConcatMightBeReplacedInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="StringFormatMightBeReplacedInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
